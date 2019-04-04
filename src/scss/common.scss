@@ -1,0 +1,182 @@
+@import './variable.scss';
+
+/**
+	flex相关
+**/
+
+.flex {
+	display: flex;
+}
+.fl1 {
+	flex: 1;
+}
+.fl2 {
+	flex: 2;
+}
+.fl3 {
+	flex: 3;
+}
+.fl4 {
+	flex: 4;
+}
+.fl5 {
+	flex: 5;
+}
+.fl6 {
+	flex: 6;
+}
+.fl7 {
+	flex: 7;
+}
+.fl8 {
+	flex: 8;
+}
+.fl9 {
+	flex: 9;
+}
+
+.fl-start {
+	justify-content: flex-start;
+}
+
+.fl-end {
+	justify-content: flex-end;
+}
+
+.fl-center {
+	justify-content: center;
+}
+.fl-around {
+	justify-content: space-around;
+}
+.fl-between {
+	justify-content: space-between;
+}
+.fl-align-center {
+	align-items: center;
+}
+
+/***
+padding
+**/
+.padding-5 {
+	padding: 0.05rem;
+}
+.padding-10 {
+	padding: 0.1rem;
+}
+.padding-15 {
+	padding: 0.15rem;
+}
+.padding-20 {
+	padding: 0.2rem;
+}
+
+/*
+* 字体大小
+*/
+.large-font {
+	font-size: $large-font;
+}
+
+.big-font {
+	font-size: $big-font;
+}
+
+.normal-font {
+	font-size: $normal-font;
+}
+.small-font {
+	font-size: $small-font;
+}
+
+.mini-font {
+	font-size: $mini-font;
+}
+
+/**
+字体颜色
+**/
+.color-white {
+	color: $white;
+}
+.color-green {
+	color: $green;
+}
+.color-red {
+	color: $red;
+}
+.color-blue {
+	color: $blue;
+}
+.color-gray {
+	color: $gray;
+}
+
+.color-dark-gray {
+	color: darken($gray, 15%);
+}
+.color-black {
+	color: $black;
+}
+.color-gold {
+	color: #eba315;
+}
+/*
+*背景颜色
+*
+*/
+
+.bg-color-white {
+	background-color: $white;
+}
+.bg-color-green {
+	background-color: $green;
+}
+.bg-color-red {
+	background-color: $red;
+}
+.bg-color-blue {
+	background-color: $blue;
+}
+.bg-color-gray {
+	background-color: $gray;
+}
+.bg-color-dark-gray {
+	background-color: darken($gray, 15%);
+}
+.bg-color-black {
+	background-color: $black;
+}
+
+/*
+分隔符
+*/
+.divider {
+	width: 100%;
+	height: 0px;
+	border-bottom: 1px solid $gray;
+}
+
+.text-over-ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.icon-button {
+	cursor: pointer;
+	transition: all 0.4s;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+input,
+select,
+button,
+textarea,
+i,
+[no-drag] {
+	-webkit-app-region: no-drag;
+}

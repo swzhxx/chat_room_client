@@ -1,0 +1,34 @@
+@import '~@/scss/variable.scss';
+.login {
+	position: absolute;
+	// background-color: red;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+
+	.login-header {
+		height: 125px;
+		background-color: rgb(36, 189, 225);
+		position: relative;
+		.login-header-close {
+			right: 10px;
+			top: 5px;
+			color: $white;
+			position: absolute;
+			font-size: $big-font;
+		}
+	}
+	.login-form {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 1;
+		-webkit-app-region: no-drag;
+		.ant-form-item {
+			margin-bottom: 10px;
+		}
+	}
+}

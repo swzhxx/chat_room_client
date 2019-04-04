@@ -1,0 +1,53 @@
+@import '~@/scss/variable.scss';
+
+.chat-room {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	.chat-room-header {
+		height: 36px;
+		font-size: $big-font;
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		border-bottom: 1px solid $gray;
+	}
+	.chat-room-body {
+		display: flex;
+		flex: 1;
+		.chat-room-content {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			border-right: 1px solid $gray;
+			.chat-room-send-form {
+				border: 1px solid $gray;
+				position: relative;
+				padding-bottom: 30px;
+				.ant-btn {
+					position: absolute;
+					right: 10px;
+					bottom: 20px;
+				}
+			}
+			.ant-input {
+				border-radius: 0px;
+				border: 0px;
+				&:focus {
+					border-color: $gray;
+					box-shadow: 0 0 0 0;
+				}
+			}
+		}
+		.chat-room-users {
+			width: 165px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
